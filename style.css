@@ -9,6 +9,10 @@ html,body
     width: 100%;
     scroll-behavior: smooth;
 }
+*
+{
+    box-sizing: border-box;
+}
 a
 {
     text-decoration: none;
@@ -17,15 +21,20 @@ a
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
+
 .stiky-head
 {
     width: 100%;
 }
+.stiky-head nav
+{
+    line-height: 20px;
+}
+
 .logo
 {   
-    margin-top: 0%;
-    padding: 0% 20px;
-    margin-bottom: 2%;
+    margin: 0 30px;
+    line-height: 80px;
     font-size: 4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-text-stroke: 1px #6eebe0;
@@ -60,53 +69,61 @@ li
 }
 header
 {
-    align-content: space-between;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
     padding: 10px;
-  
+    padding-bottom: 10px;
     box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.4);
     background: #000;
 }
 header ul li 
 {
     display: inline-block;
-    justify-content: right;
     margin-left: 10px;
     border: 1px solid #6eebe0; 
     border-radius: 10px;
     padding: 5px;   
-    transition: 0.1s;  
+    transition: 0.5s;  
 }
 header ul li:hover
 {
-    box-shadow: 0 0 10px #0cf0f880, 0 0 20px rgba(121, 218, 205, 0.2), 0 0 40px rgba(87, 226, 191, 0.3), 0 0 80px rgba(112, 231, 202, 0.3), 0 0 60px rgba(73, 224, 217, 0.2), 0 0 320px rgba(82, 219, 201, 0.3);
+    box-shadow: 0 0 10px #0cf0f880, 0 0 20px rgba(121, 218, 205, 0.2), 0 0 40px rgba(87, 226, 191, 0.3);
+    border: 0.2px solid #ffffff;
 
 }
-header ul
+.stiky-head nav
 {
-    margin-right: 20px;
+    float: right;
+    height: 80px;
+    width: 100%;
+}
+nav ul
+{
+    float: right;
+}
+header ul li:active
+{
+    background-color:#29ffe3;
+}
+
+header ul li a:active
+{
+    color: #ffffff;
 }
 header ul li a
 {
     color: #29ffe3;
     font-weight: 600;
-    border-radius: 5px;
-    padding: 6px 5px;
+    padding: 8px 20px;
     transition: 0.1s;
 }
+
 header ul li a:hover
 {
-    color: #29ffe3;
-    font-weight: 400;
-    padding: 6px 5px;
-    font-size: 17px;
-    text-shadow: 0 0 10px #0cf0f880, 0 0 20px rgba(121, 218, 205, 0.5), 0 0 40px rgba(87, 226, 191, 0.8), 0 0 80px rgba(112, 231, 202, 0.8), 0 0 160px rgba(73, 224, 217, 0.8), 0 0 320px rgba(82, 219, 201, 0.8);
+    text-shadow: 0 0 10px #0cf0f880;
 
 }
 .text-box
@@ -222,7 +239,7 @@ header ul li a:hover
 .profile-img img
 {
     margin-top: 8%;
-    height: 500px;
+    height: 450px;
     border: 1px solid #29ffe3;
     border-radius: 120px 50px 100px 3px;
     margin-left: 3%;
@@ -231,9 +248,10 @@ header ul li a:hover
 
 .profile-content
 {
-    padding: 3%;
+    padding: 2%;
     margin-top: -5%;
     width: 60%;
+    text-align: justify;
 }
 .profile-content button
 {
@@ -288,9 +306,10 @@ header ul li a:hover
     justify-content: center;
     align-content: center;
     width: 100%;
-    margin-top: 400px;
-    margin-bottom: 200px;
+    margin-top: 1%;
+    margin-bottom: 220px;
     align-self: center;
+    border-bottom: 1px solid #6eebe0;
 
 }
 .matric h2
@@ -313,8 +332,7 @@ header ul li a:hover
     padding: 10px;
     width: 20%;
     margin: 10px;
-    align-content: center;
-    justify-content: center;
+    text-align: center;
 }
 .isc
 {
@@ -323,8 +341,7 @@ header ul li a:hover
     padding: 10px;
     width: 20%;
     margin: 10px;
-    align-content: center;
-    justify-content: center;
+    text-align: center;
 }
 .BCA
 {
@@ -333,6 +350,86 @@ header ul li a:hover
     width: 20%;
     padding: 10px;
     margin: 10px;
-    align-content: center;
-    justify-content: center;
+   text-align: center;
+}
+#edu h1
+{
+    text-align: center;
+    color: #29ffe3;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid #6eebe0;
+    border-top: 1px solid #6eebe0;
+    
+}
+
+.menubtn
+{
+    margin-right: 10%;
+    margin-top: 22px;
+    font-size: 25px;
+    color: #29ffe3;
+    margin-left: 30%;
+    display: none;
+    cursor: pointer;
+  
+    
+}
+#check
+{
+    display: none;
+}
+@media only screen and (max-width:900px)
+{
+    .stiky-head
+    {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .menubtn
+    {
+        display: block;
+    }
+    .stiky-head nav {
+        position: absolute;
+        left: -100%;
+        top: 40px;
+        width: 100%;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    .stiky-head #check:checked ~ nav {
+        left: 0%;
+    
+    }
+    .stiky-head nav ul
+    {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 30px;
+        background: #000;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+
+        
+    }
+    .stiky-head nav ul li a{
+        margin: 5px 5px;
+    }
+    .stiky-head nav ul li
+    {
+        display: block;
+        padding: 20px;
+        background: #000;
+        width: 80%;
+        margin: 20px;
+    }
+    
+
+
+
 }
