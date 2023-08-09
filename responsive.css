@@ -140,7 +140,7 @@
     }
 
     .profile-img img {
-        height: 364px;
+        height: 344px;
     }
 
     .about {
@@ -177,7 +177,6 @@
         margin-top: 10%;
         font-size: 40px;
         font-weight: 600;
-        position: relative;
         margin-top: 350%;
     }
 
