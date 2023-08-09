@@ -364,191 +364,40 @@ p {
 
 }
 
-.menubtn {
-    font-size: 25px;
-    color: #29ffe3;
-    display: none;
-    cursor: pointer;
+/* --------------skills bar--------------------------- */
 
-}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    margin: 5% 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
-#check {
-    display: none;
-}
+  .skill {
+    width: 100%;
+  }
 
-@media only screen and (max-width:900px) {
-    .stiky-head {
-        padding: 0 30px;
-        justify-content: space-between;
-    }
-}
+  .skill-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
-@media only screen and (max-width:700px) and (orientation:portrait) {
-    .logo {
-        font-size: 40px;
-    }
-
-    .menubtn {
-        display: block;
-        margin: 5%;
-
-    }
-
-    .stiky-head {
-        display: flex;
-    }
-
-    .stiky-head nav {
-        position: absolute;
-        left: -100%;
-        top: 80px; /* Adjust this value */
-        width: 100%;
-        transition: 0.3s;
-        background: #000;
-        padding: 10%;
-        height: 100vh;
-        z-index: 9999; 
-
-    }
-
-    .stiky-head #check:checked~nav {
-        left: 0%;
-
-    }
-
-    .stiky-head nav ul {
-        display: block;
-        width: 100%;
-        background: #000;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        margin: 0%;
-
-
-    }
-
-    .stiky-head nav ul li a {
-        margin: 5px;
-        text-align: center;
-        padding: 0 20px;
-
-    }
-
-    .stiky-head nav ul li {
-        display: block;
-        padding: 20px;
-        background: #000;
-        width: 80%;
-        margin: 20px;
-        align-items: center;
-        padding: 15px;
-        border: none;
-    }
-
-    .stiky-head nav ul li:hover,
-    .stiky-head nav ul li:active {
-        border-bottom: 1px solid #29ffe3;
-    }
-
-    .text-box {
-        margin-top: 80%;
-        width: 100%;
-        height: 100vh;
-        padding: 4%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .text-box .sector1 {
-        width: 100%;
-        padding: 3%;
-    }
-
-    .user-image {
-        width: auto;
-        height: 330px;
-        border: 1px solid #29ffe3;
-        border-radius: 120px 50px 100px 3px;
-        background-position: cover;
-        margin: auto 10%;
-    }
-    .buttons
-    {
-        display: block;
-        padding: 20px;
-    }
-    .buttons .btn
-    {
-        margin: 20px;
-    }
-    .buttons .btn1
-    {
-        margin: 20px;
-    }
-    .sector1 h1,.auto-input
-    {
-        font-size: 25px;
-    }
-    .Introduction {
-        display: block;
-        margin-bottom: 10%;
-    }
-    .profile-img
-    {
-        width: 100%;
-        height: 330px;
-        padding: 4%;
-        
-    }
-    
-    .about
-    {
-        width: 100%;
-        height: 100vh;
-        padding: 4%;
-        display: block;
-
-    }
-    .profile-content
-    {
-        width: 100%;
-        padding: 5%;
-        margin-top: 40%;
-        display: block;
-    }
-    .profile-content a button
-    {
-        margin: 20%;
-        padding: 10px 20px;
-    }
-    #edu
-    {
-        display: block;
-        margin-top: 210%;
-        
-    }
-    #edu h1
-    {
-        border-bottom: 1px solid #29ffe3;
-        border-radius: 20px;
-        border-top: none;
-        width: 80%;
-        margin: 10%;
-        font-size: 40px;
-        font-weight: 600;
-        
-    }
-    .education
-    {
-        display: block;
-    }
-    .matric, .isc, .BCA
-    {
-       border: 1px solid #29ffe3;
-       width: 80%;
-       margin: 10%;
-       padding: 7px;
-    }
-    
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color:transparent;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+#skill h1
+{
+    text-align: center;
+    font-size: 45px;
+    border-bottom: 1px solid #29ffe3;
+    border-radius: 63px;
+    width: 200px;
+    margin: 20% auto;
 }
